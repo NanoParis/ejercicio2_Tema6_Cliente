@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+		.izq{
+			width:30%;
+			float:left;
+		}
+
+		.color{
+			background-color: #008246;
+		}
+
+		.colorB{
+			color: white;
+			text-align: center;
+		}
+
+		.espa{
+			color: white;
+			padding-bottom: 50px;
+			margin-bottom: 20px;
+		}
+		
+
+	</style>
+	
+	<script src="funcionesEjercicio2.js"></script>
+	
+</head>
+<body>
+
+<div class="color">
+	<h1 class=" colorB">Solicitudes de escolarizacion curso 2014/15</h1>
+	<div class="izq"><img src="solicitud.gif"></div>
+	<div class="espa">
+		<h2>Solicitudes recibidas:</h2><br>
+				<table>
+					<tr>
+						<td>Nombre:</td>
+						<td>Apellidos:</td>
+						<td>Curso:</td>
+					</tr>
+					<tr>
+						<td><input type="text" id="nombre"></td>
+						<td><input type="text" id="apellidos"></td>
+						<td>
+						<select id="curso">
+							<option>1º ESO</option>
+							<option>2º ESO</option>
+							<option>3º ESO</option>
+							<option>4º ESO</option>
+						</select>
+						</td>
+						<td><input type="button" id="agregar" value="Añadir solicitud"></td>
+					</tr>
+				</table>
+	</div>
+	<br>
+	<div class="espa">
+	<h2>Solicitudes registradas:</h2><br>
+	
+	<table border="solid 1px" style="text-align:center;" id="tabla">
+		<tr>
+			<td>Identificador</td>
+			<td>Nombre</td>
+			<td>Apellidos</td>
+			<td>Curso</td>
+		</tr>
+	</table>
+	
+	</div>
+
+</div>
+
+
+
+</body>
+</html>
